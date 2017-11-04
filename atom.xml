@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2017-10-30T16:27:12.542Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://warmblog.com/"/>
+  <updated>2017-10-31T12:17:27.628Z</updated>
+  <id>http://warmblog.com/</id>
   
   <author>
     <name>Share</name>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>基于VS2013的微信本地开发调试环境构建</title>
-    <link href="http://yoursite.com/2017/10/30/%E5%9F%BA%E4%BA%8EVS2013%E7%9A%84%E5%BE%AE%E4%BF%A1%E6%9C%AC%E5%9C%B0%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E7%8E%AF%E5%A2%83%E6%9E%84%E5%BB%BA/"/>
-    <id>http://yoursite.com/2017/10/30/基于VS2013的微信本地开发调试环境构建/</id>
+    <link href="http://warmblog.com/2017/10/30/%E5%9F%BA%E4%BA%8EVS2013%E7%9A%84%E5%BE%AE%E4%BF%A1%E6%9C%AC%E5%9C%B0%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E7%8E%AF%E5%A2%83%E6%9E%84%E5%BB%BA/"/>
+    <id>http://warmblog.com/2017/10/30/基于VS2013的微信本地开发调试环境构建/</id>
     <published>2017-10-30T13:37:57.000Z</published>
-    <updated>2017-10-30T16:27:12.542Z</updated>
+    <updated>2017-10-31T12:17:27.628Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/img/微信本地开发/2017-10-30_213528.png" alt=""></p><a id="more"></a><h1 id="1，引言"><a href="#1，引言" class="headerlink" title="1，引言"></a>1，引言</h1><p><br></p><blockquote><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;刚开始接触微信开发，便面临着一个非常头痛的问题,    <code>如何能够在本地开发调试</code>。因为微信有一个很尴尬的问题，<code>就是你的处理程序必须在服务器上，只支持外网链接</code>。一开始采取了一种最原始的方式，那就是将程序发布在服务器上，在程序关键位置<code>写上日志</code>，根据日志的情况再修改，调试，发布到服务器上，不能够打上断点，还不停的发布，简直感觉开发效率极其的低下，最后，终于找到了两款工具，<code>花生壳</code> 和 <code>NATAPP</code>，带来了开发的曙光。我以自己目前的vs2013的开发环境为例，<code>工具不受环境和语言的影响</code>，讲解最基本的使用方法。</p></blockquote><h1 id="2，使用花生壳完成映射"><a href="#2，使用花生壳完成映射" class="headerlink" title="2，使用花生壳完成映射"></a>2，使用花生壳完成映射</h1><h2 id="2-1-在官网注册账户"><a href="#2-1-在官网注册账户" class="headerlink" title="2.1 在官网注册账户"></a>2.1 在官网注册账户</h2><p>PS : 在官网注册（<code>注意，使用花生壳的免费穿透服务是需要实名认证的</code>）</p><p><a href="https://hsk.oray.com/download/" target="_blank" rel="external">官网地址</a><br><a href="https://hsk.oray.com/download/" target="_blank" rel="external">客户端下载地址</a></p><p>选择个人免费版，下载相应版本的内网版客户端，然后需要花费<code>7元</code>开通永久的内网穿透服务，打开后样子是这样的</p><p><img src="/img/微信本地开发/2017-10-30_225620.png" alt=""></p><h2 id="2-2-使用花生壳进行本地映射"><a href="#2-2-使用花生壳进行本地映射" class="headerlink" title="2.2 使用花生壳进行本地映射"></a>2.2 使用花生壳进行本地映射</h2><p>PS : 花生壳会免费送你一个免备案的三级域名，可直接进行微信的本地调试开发</p><p><strong>（1）添加一个映射，如下图</strong></p><p><img src="/img/微信本地开发/2017-10-30_230326.png" alt=""></p><p><strong>（2）控制台 <code>ipconfig</code> 拿到本地地址，选择花生壳送的域名，添加内网映射</strong></p><p><img src="/img/微信本地开发/2017-10-30_230314.png" alt=""></p><h2 id="2-3-目前使用花生壳的问题"><a href="#2-3-目前使用花生壳的问题" class="headerlink" title="2.3 目前使用花生壳的问题"></a>2.3 目前使用花生壳的问题</h2><p><strong>（1） 刚添加好的映射，<code>几个小时内可能会因为DNS解析等等的原因，使用不了</code>，我第一次用的时候，各种方法都试过，就是访问不了，等到第二天就自动的好了</strong></p><p><strong>（2） 偶尔会不稳定，有时候就是可能因为网络环境等等的问题，就是访问不了</strong></p><h1 id="3，使用NATAPP"><a href="#3，使用NATAPP" class="headerlink" title="3，使用NATAPP"></a>3，使用NATAPP</h1><h2 id="3-1-在官网注册账户"><a href="#3-1-在官网注册账户" class="headerlink" title="3.1 在官网注册账户"></a>3.1 在官网注册账户</h2><p>PS : 推荐使用NATAPP，注册简单，使用方便，免费需要实名，vip免实名</p><p><a href="https://natapp.cn/" target="_blank" rel="external">官网地址</a><br><a href="https://natapp.cn/" target="_blank" rel="external">客户端下载地址</a></p><h2 id="3-2-使用NATAPP进行本地映射"><a href="#3-2-使用NATAPP进行本地映射" class="headerlink" title="3.2 使用NATAPP进行本地映射"></a>3.2 使用NATAPP进行本地映射</h2><p>PS : 需要在这里购买一个二级域名，最便宜的3元一年，然后我目前使用的5元每月的隧道，有免费的</p><p><strong>（1） 登录后，在添加好的隧道里进行配置</strong></p><p><img src="/img/微信本地开发/2017-10-30_233010.png" alt=""></p><p><strong>（2）将购买的二级域名和本机的地址联系起来</strong></p><p><img src="/img/微信本地开发/2017-10-30_233051.png" alt=""></p><p><strong>（3）下载客户端，下载配置文件放在exe同级目录</strong></p><p><img src="/img/微信本地开发/2017-10-30_233726.png" alt=""></p><p><a href="http://download.natapp.cn/assets/downloads/windowsconfig/config.ini" target="_blank" rel="external">配置文件下载地址</a></p><p>打开配置文件 ，填入自己隧道的authtoken值，其他不用填，然后保存</p><p><img src="/img/微信本地开发/2017-10-30_234148.png" alt=""></p><p><img src="/img/微信本地开发/2017-10-30_234419.png" alt=""></p><p><strong>（4）双击打开exe程序，呈现如下页面就表示连通</strong></p><p><img src="/img/微信本地开发/2017-10-30_234608.png" alt=""></p><p>还有问题请参考<br><a href="https://natapp.cn/article/natapp_newbie" target="_blank" rel="external">官网简易教程</a></p><h1 id="4，微信本机开发调试"><a href="#4，微信本机开发调试" class="headerlink" title="4，微信本机开发调试"></a>4，微信本机开发调试</h1><h2 id="4-1-将程序放置在本地的服务器上，以IIS为例"><a href="#4-1-将程序放置在本地的服务器上，以IIS为例" class="headerlink" title="4.1 将程序放置在本地的服务器上，以IIS为例"></a>4.1 将程序放置在本地的服务器上，以IIS为例</h2><p><strong>（1）将开发中的程序（<code>不是发布后的程序</code>）直接在本地的IIS中添加网站，然后主机名绑定为你映射的域名</strong></p><p><img src="/img/微信本地开发/2017-10-30_235438.png" alt=""></p><h2 id="4-2-将微信的接口地址切换成映射域名"><a href="#4-2-将微信的接口地址切换成映射域名" class="headerlink" title="4.2 将微信的接口地址切换成映射域名"></a>4.2 将微信的接口地址切换成映射域名</h2><p><img src="/img/微信本地开发/2017-10-30_235709.png" alt=""></p><h2 id="4-3-找到并打开vs远程调试工具"><a href="#4-3-找到并打开vs远程调试工具" class="headerlink" title="4.3 找到并打开vs远程调试工具"></a>4.3 找到并打开vs远程调试工具</h2><p><strong>（1）在系统开始文件夹找到Visual Studio Tools</strong></p><p><img src="/img/微信本地开发/2017-10-31_000325.png" alt=""></p><p><strong>（2）在此文件加中找到msvsmon.exe程序</strong></p><p><img src="/img/微信本地开发/2017-10-31_000117.png" alt=""></p><p><strong>（3）打开后，选择工具-选项，设定为无身份验证，然后确定_</strong></p><p><img src="/img/微信本地开发/2017-10-31_000659.png" alt=""></p><p><strong>（4）以<code>管理员身份</code>在vs中打开在IIS中部署的项目，然后调试，附加到进程w3wp.exe</strong></p><p><img src="/img/微信本地开发/2017-10-31_001247.png" alt=""></p><p><img src="/img/微信本地开发/2017-10-31_001306.png" alt=""></p><p><strong>（5）若没有找到此进程，请检查是否以<code>管理员权限</code>打开的vs,或者<code>刷新IIS</code>相关的网站即可</strong></p><h1 id="终言"><a href="#终言" class="headerlink" title="终言"></a>终言</h1><blockquote><p>在微信中发一个消息，你会惊奇的发现，程序进入到了断点之中，从此，再也不用每次都发布，靠日志再来调试了。</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<p><img src="/img/微信本地开发/2017-10-30_213528.png" alt=""></p><a id="more"></a><h1 id="1，引言"><a href="#1，引言" class="headerlink" title="1，引言"></a>1，引言</h1><p><br></p><blockquote><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;刚开始接触微信开发，便面临着一个非常头痛的问题,    <code>如何能够在本地开发调试</code>。因为微信有一个很尴尬的问题，<code>就是你的处理程序必须在服务器上，只支持外网链接</code>。一开始采取了一种最原始的方式，那就是将程序发布在服务器上，在程序关键位置<code>写上日志</code>，根据日志的情况再修改，调试，发布到服务器上，不能够打上断点，还不停的发布，简直感觉开发效率极其的低下，最后，终于找到了两款工具，<code>花生壳</code> 和 <code>NATAPP</code>，带来了开发的曙光。我以自己目前的vs2013的开发环境为例，<code>工具不受环境和语言的影响</code>，讲解最基本的使用方法。</p></blockquote><h1 id="2，使用花生壳完成映射"><a href="#2，使用花生壳完成映射" class="headerlink" title="2，使用花生壳完成映射"></a>2，使用花生壳完成映射</h1><h2 id="2-1-在官网注册账户"><a href="#2-1-在官网注册账户" class="headerlink" title="2.1 在官网注册账户"></a>2.1 在官网注册账户</h2><p>PS : 在官网注册（<code>注意，使用花生壳的免费穿透服务是需要实名认证的</code>）</p><p><a href="https://hsk.oray.com/download/" target="_blank" rel="external">官网地址</a><br><a href="https://hsk.oray.com/download/" target="_blank" rel="external">客户端下载地址</a></p><p>选择个人免费版，下载相应版本的内网版客户端，然后需要花费<code>7元</code>开通永久的内网穿透服务，打开后样子是这样的</p><p><img src="/img/微信本地开发/2017-10-30_225620.png" alt=""></p><h2 id="2-2-使用花生壳进行本地映射"><a href="#2-2-使用花生壳进行本地映射" class="headerlink" title="2.2 使用花生壳进行本地映射"></a>2.2 使用花生壳进行本地映射</h2><p>PS : 花生壳会免费送你一个免备案的三级域名，可直接进行微信的本地调试开发</p><p><strong>（1）添加一个映射，如下图</strong></p><p><img src="/img/微信本地开发/2017-10-30_230326.png" alt=""></p><p><strong>（2）控制台 <code>ipconfig</code> 拿到本地地址，选择花生壳送的域名，添加内网映射</strong></p><p><img src="/img/微信本地开发/2017-10-30_230314.png" alt=""></p><h2 id="2-3-目前使用花生壳的问题"><a href="#2-3-目前使用花生壳的问题" class="headerlink" title="2.3 目前使用花生壳的问题"></a>2.3 目前使用花生壳的问题</h2><p><strong>（1） 刚添加好的映射，<code>几个小时内可能会因为DNS解析等等的原因，使用不了</code>，我第一次用的时候，各种方法都试过，就是访问不了，等到第二天就自动的好了</strong></p><p><strong>（2） 偶尔会不稳定，有时候就是可能因为网络环境等等的问题，就是访问不了</strong></p><h1 id="3，使用NATAPP"><a href="#3，使用NATAPP" class="headerlink" title="3，使用NATAPP"></a>3，使用NATAPP</h1><h2 id="3-1-在官网注册账户"><a href="#3-1-在官网注册账户" class="headerlink" title="3.1 在官网注册账户"></a>3.1 在官网注册账户</h2><p>PS : 推荐使用NATAPP，注册简单，使用方便，免费需要实名，vip免实名</p><p><a href="https://natapp.cn/" target="_blank" rel="external">官网地址</a><br><a href="https://natapp.cn/" target="_blank" rel="external">客户端下载地址</a></p><h2 id="3-2-使用NATAPP进行本地映射"><a href="#3-2-使用NATAPP进行本地映射" class="headerlink" title="3.2 使用NATAPP进行本地映射"></a>3.2 使用NATAPP进行本地映射</h2><p>PS : 需要在这里购买一个二级域名，最便宜的3元一年，然后我目前使用的5元每月的隧道，有免费的</p><p><strong>（1） 登录后，在添加好的隧道里进行配置</strong></p><p><img src="/img/微信本地开发/2017-10-30_233010.png" alt=""></p><p><strong>（2）将购买的二级域名和本机的地址联系起来</strong></p><p><img src="/img/微信本地开发/2017-10-30_233051.png" alt=""></p><p><strong>（3）下载客户端，下载配置文件放在exe同级目录</strong></p><p><img src="/img/微信本地开发/2017-10-30_233726.png" alt=""></p><p><a href="http://download.natapp.cn/assets/downloads/windowsconfig/config.ini" target="_blank" rel="external">配置文件下载地址</a></p><p>打开配置文件 ，填入自己隧道的authtoken值，其他不用填，然后保存</p><p><img src="/img/微信本地开发/2017-10-30_234148.png" alt=""></p><p><img src="/img/微信本地开发/2017-10-30_234419.png" alt=""></p><p><strong>（4）双击打开exe程序，呈现如下页面就表示连通</strong></p><p><img src="/img/微信本地开发/2017-10-30_234608.png" alt=""></p><p>还有问题请参考<br><a href="https://natapp.cn/article/natapp_newbie" target="_blank" rel="external">官网简易教程</a></p><h1 id="4，微信本机开发调试"><a href="#4，微信本机开发调试" class="headerlink" title="4，微信本机开发调试"></a>4，微信本机开发调试</h1><h2 id="4-1-将程序放置在本地的服务器上，以IIS为例"><a href="#4-1-将程序放置在本地的服务器上，以IIS为例" class="headerlink" title="4.1 将程序放置在本地的服务器上，以IIS为例"></a>4.1 将程序放置在本地的服务器上，以IIS为例</h2><p><strong>（1）将开发中的程序（<code>不是发布后的程序</code>）直接在本地的IIS中添加网站，然后主机名绑定为你映射的域名</strong></p><p><img src="/img/微信本地开发/2017-10-30_235438.png" alt=""></p><h2 id="4-2-将微信的接口地址切换成映射域名"><a href="#4-2-将微信的接口地址切换成映射域名" class="headerlink" title="4.2 将微信的接口地址切换成映射域名"></a>4.2 将微信的接口地址切换成映射域名</h2><p><img src="/img/微信本地开发/2017-10-30_235709.png" alt=""></p><h2 id="4-3-找到并打开vs远程调试工具"><a href="#4-3-找到并打开vs远程调试工具" class="headerlink" title="4.3 找到并打开vs远程调试工具"></a>4.3 找到并打开vs远程调试工具</h2><p><strong>（1）在系统开始文件夹找到Visual Studio Tools</strong></p><p><img src="/img/微信本地开发/2017-10-31_000325.png" alt=""></p><p><strong>（2）在此文件加中找到msvsmon.exe程序</strong></p><p><img src="/img/微信本地开发/2017-10-31_000117.png" alt=""></p><p><strong>（3）打开后，选择工具-选项，设定为无身份验证，然后确定_</strong></p><p><img src="/img/微信本地开发/2017-10-31_000659.png" alt=""></p><p><strong>（4）以<code>管理员身份</code>在vs中打开在IIS中部署的项目，然后调试，附加到进程w3wp.exe</strong></p><p><img src="/img/微信本地开发/2017-10-31_001247.png" alt=""></p><p><img src="/img/微信本地开发/2017-10-31_001306.png" alt=""></p><p><strong>（5）若没有找到此进程，请检查是否以<code>管理员权限</code>打开的vs,或者<code>刷新IIS</code>相关的网站即可</strong></p><h1 id="5，终言"><a href="#5，终言" class="headerlink" title="5，终言"></a>5，终言</h1><blockquote><p>在微信中发一个消息，你会惊奇的发现，程序进入到了断点之中，从此，再也不用每次都发布，靠日志再来调试了。</p></blockquote>]]></content>
     
     <summary type="html">
     
@@ -31,19 +31,19 @@
     
     </summary>
     
-      <category term="微信本地开发" scheme="http://yoursite.com/categories/%E5%BE%AE%E4%BF%A1%E6%9C%AC%E5%9C%B0%E5%BC%80%E5%8F%91/"/>
+      <category term="微信本地开发" scheme="http://warmblog.com/categories/%E5%BE%AE%E4%BF%A1%E6%9C%AC%E5%9C%B0%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="花生壳" scheme="http://yoursite.com/tags/%E8%8A%B1%E7%94%9F%E5%A3%B3/"/>
+      <category term="花生壳" scheme="http://warmblog.com/tags/%E8%8A%B1%E7%94%9F%E5%A3%B3/"/>
     
-      <category term="NATAPP" scheme="http://yoursite.com/tags/NATAPP/"/>
+      <category term="NATAPP" scheme="http://warmblog.com/tags/NATAPP/"/>
     
   </entry>
   
   <entry>
     <title>Hexo+Github 搭建属于自己的博客系列教程二：博客写作与发布</title>
-    <link href="http://yoursite.com/2017/10/23/Hexo-Github-%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B%E4%BA%8C%EF%BC%9A%E5%8D%9A%E5%AE%A2%E5%86%99%E4%BD%9C%E4%B8%8E%E5%8F%91%E5%B8%83/"/>
-    <id>http://yoursite.com/2017/10/23/Hexo-Github-搭建属于自己的博客系列教程二：博客写作与发布/</id>
+    <link href="http://warmblog.com/2017/10/23/Hexo-Github-%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B%E4%BA%8C%EF%BC%9A%E5%8D%9A%E5%AE%A2%E5%86%99%E4%BD%9C%E4%B8%8E%E5%8F%91%E5%B8%83/"/>
+    <id>http://warmblog.com/2017/10/23/Hexo-Github-搭建属于自己的博客系列教程二：博客写作与发布/</id>
     <published>2017-10-23T11:48:02.000Z</published>
     <updated>2017-10-28T12:56:08.789Z</updated>
     
@@ -58,19 +58,19 @@
     
     </summary>
     
-      <category term="博客开发" scheme="http://yoursite.com/categories/%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/"/>
+      <category term="博客开发" scheme="http://warmblog.com/categories/%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://warmblog.com/tags/Hexo/"/>
     
-      <category term="Github" scheme="http://yoursite.com/tags/Github/"/>
+      <category term="Github" scheme="http://warmblog.com/tags/Github/"/>
     
   </entry>
   
   <entry>
     <title>Hexo+Github 搭建属于自己的博客系列教程一：基础环境搭建</title>
-    <link href="http://yoursite.com/2017/10/21/Hexo-Github-%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B%E4%B8%80%EF%BC%9A%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
-    <id>http://yoursite.com/2017/10/21/Hexo-Github-搭建属于自己的博客系列教程一：基础环境搭建/</id>
+    <link href="http://warmblog.com/2017/10/21/Hexo-Github-%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B%E4%B8%80%EF%BC%9A%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>http://warmblog.com/2017/10/21/Hexo-Github-搭建属于自己的博客系列教程一：基础环境搭建/</id>
     <published>2017-10-21T12:32:00.000Z</published>
     <updated>2017-10-28T12:52:24.429Z</updated>
     
@@ -85,12 +85,12 @@
     
     </summary>
     
-      <category term="博客开发" scheme="http://yoursite.com/categories/%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/"/>
+      <category term="博客开发" scheme="http://warmblog.com/categories/%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://warmblog.com/tags/Hexo/"/>
     
-      <category term="Github" scheme="http://yoursite.com/tags/Github/"/>
+      <category term="Github" scheme="http://warmblog.com/tags/Github/"/>
     
   </entry>
   
