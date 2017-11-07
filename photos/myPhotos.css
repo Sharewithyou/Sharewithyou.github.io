@@ -1,0 +1,9 @@
+@media (min-width: 1600px){
+  .container .main-inner {
+    width: 1200px;
+      }
+  }
+
+  .main-inner {
+     margin-top: 20px;
+     }
