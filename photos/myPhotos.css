@@ -7,3 +7,12 @@
   .main-inner {
      margin-top: 20px;
      }
+
+h1.year{
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.instagram .album h1 em {
+     font-size: 15px;
+}
