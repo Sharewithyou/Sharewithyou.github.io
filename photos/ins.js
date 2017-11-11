@@ -124,7 +124,7 @@
             src += '';
   
             liTmpl += '<figure class="thumb" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">\
-                  <a href="' + src + '" itemprop="contentUrl" data-size="1080x1080" data-type="' + type + '" data-target="' + src + '">\
+                  <a href="' + src + '" itemprop="contentUrl" data-size="1920x1280" data-curr-size="1920x1280" data-type="' + type + '" data-target="' + src + '">\
                     <img class="reward-img" data-type="' + type + '" data-src="' + minSrc + '" src="./assets/empty.jpeg" itemprop="thumbnail" onload="lzld(this)">\
                   </a>\
                   <figcaption style="display:none" itemprop="caption description">' + data.text[i] + '</figcaption>\
