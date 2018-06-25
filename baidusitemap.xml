@@ -2,6 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     
+<<<<<<< HEAD
+=======
+    
+    
+    
+    
+  <url>
+    <loc>http://warmblog.com/posts/28497.html</loc>
+    <lastmod>2017-11-07T14:30:54.017Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo+Github 搭建属于自己的博客系列教程四：基于Next主题的美化和优化</title>
+        <pubTime>2017-11-05T09:46:33.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://warmblog.com/posts/10258.html</loc>
+    <lastmod>2017-11-07T14:30:54.015Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo+Github 搭建属于自己的博客系列教程三：Hexo常用命令与Markdown常用语法</title>
+        <pubTime>2017-11-05T07:25:18.000Z</pubTime>
+        
+        <tag>Hexo </tag>
+         
+        <tag>Github </tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo博客开发" url="http://warmblog.com/categories/Hexo%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+>>>>>>> parent of 7ff2451... Site updated: 2017-12-30 01:09:33
   <url>
     <loc>http://warmblog.com/posts/16884.html</loc>
     <lastmod>2018-03-29T13:22:28.456Z</lastmod>
